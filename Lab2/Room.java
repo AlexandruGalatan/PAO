@@ -1,4 +1,5 @@
 package lab2;
+
 //Room object with constructor, accessors and mutators
 public class Room
 {
