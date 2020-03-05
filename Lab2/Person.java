@@ -1,4 +1,5 @@
 package lab2;
+
 //Person object with constructor, accessors and mutators
 public class Person
 {
