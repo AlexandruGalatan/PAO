@@ -1,4 +1,5 @@
 package lab2;
+
 //Subject object with constructor, accessors and mutators
 public class Subject
 {
