@@ -26,7 +26,6 @@ public class main {
 
         Register.PrintCart();
 
-
         Register.TransactionCompleted(CashID);
 
         Register.AddToCart(WaterBottleID);
