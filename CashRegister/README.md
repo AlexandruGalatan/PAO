@@ -35,7 +35,9 @@
 **Employee CreateEmployee(String name)** - Creates an Employee and returns the object
 
 **Product CreateProduct(String name, float price)** - Creates a Product and returns the object
+
 **Product CreateElectronicProduct(String name, float price, int monthsWarranty)** - Creates an ElectronicProduct and returns the object
+
 **Product CreateClothingProduct(String name, float price, String size)** - Creates a ClothingProduct and returns the object
 
 **PaymentMethod CreatePaymentMethod(String name)** - Creates a PaymentMethod and returns the object
