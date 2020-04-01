@@ -1,7 +1,7 @@
 # Cash Register
 
 ## Objects
-**CashRegister** *Service Class*
+**CashRegister** *Service Class*\n
 **Employee**
 **Product**
 **ShoppingCart**
