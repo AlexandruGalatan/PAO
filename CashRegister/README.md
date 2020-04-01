@@ -21,6 +21,4 @@
 
 
 ## Actions
-**Employee GetTopEmployee()**
-
-Returns the Employee object with the most sales.
+**Employee GetTopEmployee()** - Returns the Employee object with the most sales.
