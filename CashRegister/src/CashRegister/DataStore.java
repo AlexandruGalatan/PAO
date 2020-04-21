@@ -9,7 +9,7 @@ import java.util.List;
 public class DataStore {
     private static DataStore single_instance = null;
 
-    String neededFiles[] = {"products.csv", "employees.csv", "paymentMethods.csv", "transactions.csv"};
+    String neededFiles[] = {"products.csv", "employees.csv", "paymentMethods.csv", "transactions.csv", "audit.csv"};
 
     public DataStore(){
         for (int i = 0; i < neededFiles.length; i++) {
