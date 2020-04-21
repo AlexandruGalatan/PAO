@@ -19,7 +19,9 @@
 
 **ClothingProduct** *(child of Product)*
 
+**Audit**
 
+**DataStore**
 
 ## Actions
 **Employee GetTopEmployee()** - Returns the Employee object with the most sales
