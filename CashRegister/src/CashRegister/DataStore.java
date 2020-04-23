@@ -31,6 +31,7 @@ public class DataStore {
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter(fileName, true))) {
             buffer.write(text);
             buffer.newLine();
+            buffer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,6 +41,7 @@ public class DataStore {
         try (BufferedWriter buffer = new BufferedWriter(new FileWriter(fileName))) {
             buffer.write(text);
             buffer.newLine();
+            buffer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -59,6 +61,7 @@ public class DataStore {
                 }
                 line = buffer.readLine();
             }
+            buffer.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
