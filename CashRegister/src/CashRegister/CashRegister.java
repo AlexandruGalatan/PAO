@@ -195,6 +195,7 @@ public class CashRegister {
 
         String csv = Integer.toString(thisId).concat(",").concat(name);
         dataStore.writeUsingBufferedWriter(csv, "employees.csv");
+        dataStore.db.createEmployee(thisId, name);
 
         audit.log("CreateEmployee");
 
@@ -212,6 +213,7 @@ public class CashRegister {
 
         String csv = "0,".concat(Integer.toString(productId)).concat(",").concat(name).concat(",").concat(Float.toString(price));
         dataStore.writeUsingBufferedWriter(csv, "products.csv");
+        dataStore.db.createProduct(0, productId, name, price, "");
 
         audit.log("CreateProduct");
 
@@ -229,6 +231,7 @@ public class CashRegister {
 
         String csv = "1,".concat(Integer.toString(thisId)).concat(",").concat(name).concat(",").concat(Float.toString(price)).concat(",").concat(Integer.toString(monthsWarranty));
         dataStore.writeUsingBufferedWriter(csv, "products.csv");
+        dataStore.db.createProduct(1, thisId, name, price, Integer.toString(monthsWarranty));
 
         audit.log("CreateElectronicProduct");
 
@@ -246,6 +249,7 @@ public class CashRegister {
 
         String csv = "2,".concat(Integer.toString(thisId)).concat(",").concat(name).concat(",").concat(Float.toString(price)).concat(",").concat(size);
         dataStore.writeUsingBufferedWriter(csv, "products.csv");
+        dataStore.db.createProduct(2, thisId, name, price, size);
 
         audit.log("CreateClothingProduct");
 
@@ -262,6 +266,7 @@ public class CashRegister {
 
         String csv = Integer.toString(thisId).concat(",").concat(name);
         dataStore.writeUsingBufferedWriter(csv, "paymentMethods.csv");
+        dataStore.db.createPaymentMethod(thisId, name);
 
         audit.log("CreatePaymentMethod");
 
