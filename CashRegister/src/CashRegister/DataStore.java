@@ -6,12 +6,16 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import CashRegister.JDBC.dbmanager;
+
 public class DataStore {
     private static DataStore single_instance = null;
 
     String neededFiles[] = {"products.csv", "employees.csv", "paymentMethods.csv", "transactions.csv", "audit.csv"};
+    dbmanager db = null;
 
     public DataStore(){
+        db = new dbmanager();
         for (int i = 0; i < neededFiles.length; i++) {
             if (!Files.exists(Paths.get(neededFiles[i]))){
                 writeUsingBufferedWriter("", neededFiles[i]);
