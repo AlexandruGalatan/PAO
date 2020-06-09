@@ -19,5 +19,6 @@ public class Audit {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         String csv = actionName.concat(",").concat(String.valueOf(timestamp));
         dataStore.writeUsingBufferedWriter(csv, "audit.csv");
+        dataStore.db.createAudit(actionName, String.valueOf(timestamp));
     }
 }
